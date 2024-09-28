@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="wrapper">
+    <h3>Receiver</h3>
+    <div id="receiver-wrapper"></div>
+
+    <hr />
+    <h3>Controller</h3>
+
+    <button class="btn btn-primary" id="requestCtrlBtn" disabled></button>
+    <div class="alert alert-info d-none" role="alert" id="message"></div>
+
+    <div id="controller-wrapper"></div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script type="module" src="~/js/site.js" asp-append-version="true"></script>
